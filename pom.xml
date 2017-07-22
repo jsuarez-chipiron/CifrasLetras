@@ -12,15 +12,10 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.github.noraui</groupId>
-            <artifactId>ojdbc7</artifactId>
-            <version>12.1.0.2</version>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>6</version>
         </dependency>
-<!--        <dependency>
-            <groupId>ojdbc</groupId>
-            <artifactId>ojdbc</artifactId>
-            <version>14</version>
-        </dependency>-->
     </dependencies>
     <build>
         <finalName>CifrasLetras</finalName>

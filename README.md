@@ -14,3 +14,19 @@ insert into cifrasletras_bk (palabra, ordenada) select palabra,ordenada from cif
 
 java -cp /home/jasuarez/informatica/java/jars/ojdbc5.jar:ciflet.jar es.javier.Calcular eismoqocs
 ```
+
+Debido a las politicas de Oracle hay que instalar el jar del driver ojdbc en el repositorio local para que el código funcione.
+
+```
+mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=6 -Dpackaging=jar
+```
+
+Luego referenciarlo de esta manera en el pom.xml
+
+```
+<dependency>
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc6</artifactId>
+    <version>6</version>
+</dependency>
+```
