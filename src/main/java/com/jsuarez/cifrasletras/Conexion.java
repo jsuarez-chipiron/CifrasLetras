@@ -23,7 +23,7 @@ public class Conexion
  
   public Conexion() throws SQLException, NamingException {
 	  DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
-      conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl", "test", "TEST");
+      conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "test", "test");
          
       stmt = conn.createStatement();
        

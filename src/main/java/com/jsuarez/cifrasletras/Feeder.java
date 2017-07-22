@@ -25,7 +25,7 @@ public class Feeder {
 	}
 	
 	public void alimentar() throws Exception{
-		BufferedReader br = new BufferedReader(new FileReader("/home/jasuarez/Escritorio/feed3.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("/Users/jsuarez/Documents/work/CifrasLetras/feed3.txt"));
 		String linea = null;
 		int j = 0;
 		while ((linea = br.readLine()) != null ){
